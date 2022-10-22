@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Bonnie's Web Application</title>
+    <link rel="stylesheet" href = "styles.css">
+    <script src = "https://kit.fontawesome.com/b99e675b6e.js"></script>
+    
+</head>
+    
+<body>
+
+    <div id ="header">
+        <nav>
+            <img src = "images/logo.png"class="logo">
+            <h1 class="bonnie"> Bonnie Le </h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                
+            </ul>
+            <img src="images/menu.png" class = "menu-icon">
+        </nav>
+        
+        <div class="text-box">
+            <h1>I'm <span class="auto-input"></span></h1>
+            <p>Junior Web Developer</p>
+            <a href="">Contact Me </a>
+            <a href="" class="btn">Download CV</a>
+        </div>
+        <img src="images/user.jpg" class = "user-img">
+
+    </div>
+        <!-- Auto typing using JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed(".auto-input",{
+                strings: ["Bonnie Le", "Web Developer", "UI Designer"],
+                typeSpeed: 170,
+                loop:true
+            
+
+            })
+        </script>
+        <!--Education Section-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div id="about-col-1">
+                    
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Senior Computer Science student with a strong passion for web applications
+                        </p>
+                    </div>
+                    <div class="tab-titles">
+                        <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class = "tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI</span> Design Web/App Interfaces</li>
+                            <li><span>Web Development</span> Design Web/App Interfaces</li>
+                            <li><span>App</span> Design Web/App Interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2020-Current</span> Tech Support</li>
+                            <li><span>2018-Current</span> school</li>
+                            <li><span>2017-current</span> Design Web/App Interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>12-2022</span>BS Computer Science at Metro State University</li>
+                            <li><span>2018-2020</span> AS Computer Science at Normandale College</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tablink of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+</body>
+  
+</html>

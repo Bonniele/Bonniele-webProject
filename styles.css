@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+*{
+    font-family: 'PT Serif', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background:#020412;
+    color: #fff;
+    padding: 0 8.5%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+}
+body{
+    background-color: black;
+    
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 30px 0px 10px;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+    padding-left: 5%;
+    height: 90px;
+}
+.bonnie{
+    width: 100px ;
+    padding-left: 0%;
+    padding-top: 35px;
+    height: 90px;
+    color: white;
+    display: inline;
+    font-size: 20px;
+    color: darkgoldenrod;
+}
+.menu-icon{
+    width: 35px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 40px;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover{
+    color: lightskyblue;
+}
+.text-box{
+    margin-top: 15%;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    color: #fff;
+}
+.text-box h1{
+    font-size: 75px;
+    line-height: 160px;
+}
+.text-box a{
+    margin-top: 30px;
+    display: inline-block;
+    border-radius: 6px;
+    border: 2px solid #fff724;
+    color: #fff724;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.text-box .btn{
+    background: #fff724;
+    color: #000;
+    margin-left: 30px;
+    font-weight: 600;
+}
+.user-img{
+    max-width: 540px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    right: 5%;
+    bottom: 0%;
+    top: 17%;
+    border-radius: 8px;
+}
+/*-----About Me-----*/
+#about{
+    padding: 220px 0;
+    color: #ababab;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size:60;
+    font-weight: 600;
+    color: white;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 100%;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/* Education */
+#university{
+    padding: 3%;
+    color: #ababab;
+}
+.school h1{
+    color: #fff724 ;
+    font-size: xx-large;
+    display: flex;
+
+}
+.courses{
+    padding-left: 10%;
+}
+.metro{
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    right: 13%;
+    bottom: 0%;
+    top: 27%;
+    border-radius: 8px;
+}
+.normandale{
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    right: 10%;
+    bottom: 0%;
+    top: 70%;
+    border-radius: 8px;
+}
+.school h2{
+    color: white;
+    font-size: medium;
+}
+/* Experience */
+.experience-h1{
+    color:darkgoldenrod;
+    text-align: center;
+}
+#experience-table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+#experience-table td, #experience-table th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#experience-table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: green;
+    color: white;
+}
+.experience1{
+    color: white;
+}
+#experience-table tr:nth-child(even){
+    background-color: darkgoldenrod;
+}
+#experience-table tr:hover{
+    background-color: darkgoldenrod;
+}
+/* Project */
+#project-body{
+    color: black;
+    background-color: white;
+}
+.projectname{
+    text-align: center;
+    color: darkgoldenrod;
+}
+/* Media */
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width:991px) {
+    head{
+        padding: 2rem;
+    }
+    
+}
+@media (max-width:768px) {
+    #header{
+        display: initial;
+    }
+    head .navbar{
+        position: absolute;
+        top: 100%; right: 0; left: 0;
+        background: #333;
+        border-top:.1rem solid rgba(255, 255,255,.2);
+        padding: 1rem 2rem;
+
+    }
+    head .navbar{
+        display: block;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        background: #222;
+
+    }
+}
+@media(max-width:450px){
+    htm{
+        font-size: 50%;
+    }
+
+}
