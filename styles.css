@@ -18,6 +18,7 @@
 }
 body{
     background-color: black;
+    overflow-x: hidden;
     
 }
 .container{
@@ -67,10 +68,25 @@ nav ul li a{
     text-decoration: none;
     font-size: 17px;
     letter-spacing: 1px;
+    position: relative;
 }
 
 nav ul li a:hover{
     color: lightskyblue;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;/* this make whenever select button the line will visible*/
+    height: 3px;
+    background: darkgoldenrod;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+/* make line visible when select the button */
+nav ul li a:hover::after{
+    width: 100%;
 }
 .text-box{
     margin-top: 15%;
@@ -110,20 +126,36 @@ nav ul li a:hover{
 }
 /*-----About Me-----*/
 #about{
-    padding: 220px 0;
+    padding: 80px 0;
     color: #ababab;
 }
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
 .about-col-2{
     flex-basis: 60%;
 }
 .sub-title{
-    font-size:60;
+    font-size:60px;
     font-weight: 600;
-    color: white;
+    color: darkgoldenrod;
+    text-align: center;
+    margin-top: 2px;
 }
 .tab-titles{
     display: flex;
-    margin: 20px 0 40px;
+    text-align: center;
+    width: 100%;
 }
 .tab-links{
     margin-right: 50px;
@@ -136,7 +168,7 @@ nav ul li a:hover{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: darkgoldenrod;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -145,8 +177,16 @@ nav ul li a:hover{
 .tab-links.active-link::after{
     width: 100%;
 }
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
 .tab-contents{
-    display: none;
+    display: none; /*hide all text*/
 }
 .tab-contents.active-tab{
     display: block;
@@ -217,7 +257,7 @@ nav ul li a:hover{
     background-color: darkgoldenrod;
 }
 #experience-table tr:hover{
-    background-color: darkgoldenrod;
+    background-color: darkgreen;
 }
 /* Project */
 #project-body{
