@@ -223,10 +223,19 @@ nav ul li a:hover{
 #project-body{
     color: black;
     background-color: white;
+    display: block;
+    padding: 30px 30px 30px 10px;
+    text-align: center;
 }
 .projectname{
     text-align: center;
     color: darkgoldenrod;
+}
+#bnt1{
+    border: 2px solid green;
+    border-radius: 25px;
+    background: green;
+
 }
 /* Media */
 @media(max-width:1200px){
