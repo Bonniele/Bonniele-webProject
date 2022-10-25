@@ -21,6 +21,7 @@ body{
     overflow-x: hidden;
     
 }
+
 .container{
     padding: 10px 10%;
 }
@@ -127,7 +128,8 @@ nav ul li a:hover::after{
 /*-----About Me-----*/
 #about{
     padding: 80px 0;
-    color: #ababab;
+    color: black;
+    background-image:url("images/cool-background.png");
 }
 .row{
     display: flex;
@@ -261,8 +263,8 @@ nav ul li a:hover::after{
 }
 /* Project */
 #project-body{
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: #212121;
     display: block;
     padding: 30px 30px 30px 10px;
     text-align: center;
@@ -277,6 +279,44 @@ nav ul li a:hover::after{
     background: green;
 
 }
+/* loading uiverse*/
+.scanner h1 {
+    color: transparent;
+    font-size: 1.4rem;
+    position: relative;
+    overflow: hidden;
+   }
+   
+   .scanner h1::before {
+    content: "Loading...";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 4px solid #17FEFF;
+    overflow: hidden;
+    color: #17FEFF;
+    animation: load91371 4s linear infinite;
+   }
+   
+   @keyframes load91371 {
+    0%, 10%, 100% {
+     width: 0;
+    }
+   
+    10%,20%,30%,40%,50%,60%,70%,80%,90%,100% {
+     border-right-color: transparent;
+    }
+   
+    11%,21%,31%,41%,51%,61%,71%,81%,91% {
+     border-right-color: #17FEFF;
+    }
+   
+    60%, 80% {
+     width: 100%;
+    }
+   }
 /* Media */
 @media(max-width:1200px){
     html{
