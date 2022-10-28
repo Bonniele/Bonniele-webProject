@@ -196,10 +196,11 @@ nav ul li a:hover::after{
 /* Education */
 #university{
     padding: 3%;
-    color: #ababab;
+    color: black;
+    background-color: #c7b4d8;
 }
 .school h1{
-    color: #fff724 ;
+    color: darkgoldenrod ;
     font-size: xx-large;
     display: flex;
 
