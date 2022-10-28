@@ -18,7 +18,7 @@ body{
     display: flex;
     width: 1200px;
     margin: 50px auto;
-    background: #fff;
+    background:white;
     padding: 10px;
 }
 
@@ -102,7 +102,7 @@ body{
     position: relative;
     width: 125px;
     height: 20px;
-    background: #fff;
+    background:white;
    
 }
 .resume_wrapper .resume_left .resume_skills .skills_list .skills_bar p span{
@@ -112,6 +112,7 @@ body{
     background: #0175b2;
     width: 100%;
     height: 100%;
+    color: darkblue;
    
 }
 .resume_wrapper .resume_right {
@@ -156,7 +157,7 @@ body{
     right: 0;
     width: 10px;
     height: 10px;
-    background: #fff;
+    background:white;
     border: 1px solid #2625ed;
     border-radius: 50%;
     
@@ -182,7 +183,7 @@ body{
 }
 .resume_wrapper .resume_right .resume_interests .interests .int_icon{
     font-size: 38px;
-    color: mediumblue;
+    color: black;
     margin-bottom: 10px;
     
     
@@ -197,11 +198,8 @@ h3{
 }
 ul {
   list-style-type: square;
-    color: black;
+    color: darkblue;
     margin-left: 55px;
-    
-    
-    
     
 }
 
