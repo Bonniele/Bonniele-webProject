@@ -116,13 +116,13 @@ nav ul li a:hover::after{
     font-weight: 600;
 }
 .user-img{
-    max-width: 540px;
-    width: 100%;
+    /* max-width: 540px; */
+    width: 40%;
     height: auto;
     position: absolute;
     right: 5%;
-    bottom: 0%;
-    top: 17%;
+    bottom: 50%;
+    top: 20%;
     border-radius: 8px;
 }
 /*-----About Me-----*/
@@ -230,24 +230,26 @@ nav ul li a:hover::after{
     padding-left: 10%;
 }
 .metro{
-    max-width: 200px;
-    width: 100%;
+    /* max-width: 200px; */
+    width: 20%;
     height: auto;
-    position: absolute;
+    /* position: absolute; */
     right: 13%;
     bottom: 0%;
     top: 27%;
     border-radius: 8px;
+    float: right;
 }
 .normandale{
-    max-width: 250px;
-    width: 100%;
+    /* max-width: 215px; */
+    width: 20%;
     height: auto;
-    position: absolute;
-    right: 10%;
-    bottom: 0%;
-    top: 70%;
-    border-radius: 8px;
+    /* position: absolute; */
+    right: 12%;
+    bottom: 5%;
+    top: 30%;
+    border-radius: 10px;
+    float: right;
 }
 .school h2{
     color: white;
@@ -372,9 +374,16 @@ nav ul li a:hover::after{
 
     }
 }
-@media(max-width:450px){
+@media(max-width:414px){
     htm{
         font-size: 50%;
+    }
+    .user-img{
+        width: 100%;
+        height: auto;
+        top:93%;
+
+
     }
 
 }
