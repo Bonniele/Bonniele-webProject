@@ -11,10 +11,13 @@
     height: 100vh;
     background:#020412;
     color: #fff;
-    padding: 0 8.5%;
+    
     position: fixed;
     z-index: 1000;
     display: flex;
+    top:0; left:0; right:0;
+    padding: 20px 7%;
+    justify-content: space-between;
 }
 body{
     background-color: black;
@@ -47,11 +50,21 @@ nav{
     color: white;
     display: inline;
     font-size: 20px;
+    font-weight: bolder;
     color: darkgoldenrod;
 }
 .menu-icon{
     width: 35px;
     cursor: pointer;
+}
+#menu-bar{
+    display: none;
+}
+label{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    display: none;
 }
 nav ul{
     flex: 1;
@@ -63,13 +76,14 @@ nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 30px;
+    position: relative;
 }
 nav ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     letter-spacing: 1px;
-    position: relative;
+    display: block;
 }
 
 nav ul li a:hover{
@@ -155,7 +169,7 @@ nav ul li a:hover::after{
     margin-top: 2px;
 }
 /* skills button */
-/* From uiverse.io by @gagan-gv */
+
 .spinner {
     height: 50px;
     width: max-content;
@@ -303,6 +317,40 @@ nav ul li a:hover::after{
     background: green;
 
 }
+.websitelink{
+    color: white;
+    cursor: pointer;
+}
+/* progress bar */
+.progress{
+    background: grba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+.progress-value{
+    animation: load 5s normal forwards infinite;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec8c6 0%,#7ee8fa 74%);
+    height: 20px;
+    width: 100%;
+    text-align: center;
+}
+@keyframes load {
+    0%{width: 0;}
+    100%{width: 100%;}
+   
+      
+}
 /* loading uiverse*/
 .scanner h1 {
     color: transparent;
@@ -321,10 +369,10 @@ nav ul li a:hover::after{
     border-right: 4px solid #17FEFF;
     overflow: hidden;
     color: #17FEFF;
-    animation: load91371 4s linear infinite;
+    animation: load1 4s linear infinite;
    }
    
-   @keyframes load91371 {
+   @keyframes load1 {
     0%, 10%, 100% {
      width: 0;
     }
@@ -347,9 +395,12 @@ nav ul li a:hover::after{
         font-size: 55%;
     }
 }
-@media (max-width:991px) {
+@media (max-width:992px) {
     head{
-        padding: 2rem;
+        padding: 20px;
+    }
+    label{
+        display: initial;
     }
     
 }
@@ -373,8 +424,15 @@ nav ul li a:hover::after{
         background: #222;
 
     }
+    .user-img{
+        width: 100%;
+        height: auto;
+        top:93%;
+
+
+    }
 }
-@media(max-width:414px){
+@media(max-width:600px){
     htm{
         font-size: 50%;
     }
